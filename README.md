@@ -6,7 +6,7 @@
 
 | Name   | Email              | GitHub |
 |--------|--------------------|--------|
-| Person | person@website.com | [@name](https://github.com/name)
+| Anissa Lintang | lintanganissa@yahoo.com | [@anissalintang](https://github.com/anissalintang)
 | Person | person@website.com | [@name](https://github.com/name)
 | Person | person@website.com | [@name](https://github.com/name)
 
