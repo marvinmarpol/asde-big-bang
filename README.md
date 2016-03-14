@@ -7,7 +7,7 @@
 | Name   | Email              | GitHub |
 |--------|--------------------|--------|
 | Anissa Lintang | lintanganissa@yahoo.com | [@anissalintang](https://github.com/anissalintang)
-| Person | person@website.com | [@name](https://github.com/name)
+| Kega Kurniawan | keygen.gundar@gmail.com | [@kegakurniawan](https://github.com/kegakurniawan)
 | Person | person@website.com | [@name](https://github.com/name)
 
 --------------------------------------------------
