@@ -8,7 +8,8 @@
 |--------|--------------------|--------|
 | Anissa Lintang | lintanganissa@yahoo.com | [@anissalintang](https://github.com/anissalintang)
 | Kega Kurniawan | keygen.gundar@gmail.com | [@kegakurniawan](https://github.com/kegakurniawan)
-| Person | person@website.com | [@name](https://github.com/name)
+| Dion Edo Fananie | dionfananie@gmail.com | [@name](https://github.com/dionfananie)
+| Marvin Mitchell | marvinmarpol@gmail.com | [@name](https://github.com/marvinmarpol)
 
 --------------------------------------------------
 
