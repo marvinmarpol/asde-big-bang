@@ -15,6 +15,7 @@
 
 ## User Documentation
 
+Find it [Here] (https://github.com/gunadarma-academy/asde-big-bang/ktfui-DOCUMENTATION)
 [Explanation about the project requirements, analysis, design, architecture, components, interfaces, evaluation, presentation, and other characteristics.]
 
 (who, why, how, what, where, when)
