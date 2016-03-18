@@ -1,4 +1,3 @@
-		<?php wp_footer(); ?>
 		<div id="footer-navigation">
 			<?php
 				$args = array(
@@ -6,7 +5,8 @@
 				);
 				wp_nav_menu( $args );
 			?>
-		</div>	
+		</div>
+		<?php wp_footer(); ?>
 	</body>
 
 </html>
