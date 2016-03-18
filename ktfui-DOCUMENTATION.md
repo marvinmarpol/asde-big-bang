@@ -8,21 +8,23 @@
 - Marvin Mitchell Z     as | Project Manager and Developer 
 
 
-## Plan
+## I. Plan
 ### Goal
 Membangun sebuah website untuk Komunitas Tari Fisip (KTF) Universitas Indonesia (UI) yang berbentuk company profile dan tidak memiliki fitur e-commerce. Website dibuat dengan menggunakan CMS Wordpress dengan menggunakan bahasa full english, tampilan simple, elegan dan profesional.
+
 Pemaparan lebih lanjut mengenai kebutuhan dan spesifikasi dari user akan dibahas pada tahap Research
-####Research
+
+#### A. Research
 Teknik riset yang digunakan untuk mengumpulkan kebutuhan perancangan dan pembuatan website yaitu dengan melakukan wawancara dan pembuatan user stories.
 
-#### User Stories
+##### -> User Stories
 Nama Client	: Komunitas Tari Fisip (Radha Sarisha)
 
 Deskripsi	: KTF UI merupakan komunitas tari yang merepresentasikan Indonesia ke kancah Internasional, dengan melakukan misi budaya pada tahun 2014 di Amerika. KTF UI mengikuti tiga festival, yang pertama adalah Springville World Folkfest pada tanggal 28 Juli-3 Agustus 2014, selanjutnya adalah Summerfest Dance Festival di Bountiful pada tanggal 4 Agustus-10 Agustus 2014, yang terakhir International Days di South Jordan.
 
 Sumber referensi : https://ktfuiradhasarisha.wordpress.com/
  
-#### User Interview
+##### -> User Interview
 1. Web seperti apa yang diinginkan user?
   - Web ingin seperti web pada zaman sekarang, memiliki landing page, dan beberapa categories dan subcategories. Bisa dibilang web yang mereka minta termasuk jenis website company profile kebanyakan.
 
