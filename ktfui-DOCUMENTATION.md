@@ -57,3 +57,48 @@ Sumber referensi : https://ktfuiradhasarisha.wordpress.com/
 
 10. Warna dominan apa yang ingin digunakan pada website?
   - Warna dominan orange , gold, coklat dan putih (bisa dilihat di wordpress) 
+
+#### B. Estimated Time
+
+Waktu yang dibutuhkan untuk menyelesaikan proyek 4-5 minggu
+
+Metode dalam melakukan penjadwalan proyek menggunakan metode milestone, dikarenakan dengan metode milestone dapat dinilai setiap kemajuan pada proyek yang sedang berjalan dengan memecah kegiatan pada proyek menjadi sub-bagian dan melakukan target penyelesaian dari setiap bagian sub-proyek tersebut :
+
+### [ON PROGRESS]
+
+#### C. Methodology
+
+**RAD (Rapid Application Development)**
+
+Rapid Application Development (RAD) adalah strategi siklus hidup yang ditujukan untuk menyediakan pengembangan yang jauh lebih cepat dan mendapatkan hasil dengan kualitas yang lebih baik dibandingkan dengan hasil yang dicapai melalui siklus tradisional (McLeod, 2002). RAD merupakan gabungan dari bermacam-macam teknik terstruktur dengan teknik prototyping dan teknik pengembangan joint application untuk mempercepat pengembangan sistem/aplikasi (Bentley, 2004).
+
+Pemaparan konsep yang lebih spesifik lagi dijelaskan oleh Pressman (2005) dalam bukunya, “Software Engineering: A Practition’s Approach”. Ia mengatakan bahwa RAD adalah proses model perangkat lunak inkremental yang menekankan siklus pengembangan yang singkat. Model RAD adalah sebuah adaptasi “kecepatan tinggi” dari model waterfall, di mana perkembangan pesat dicapai dengan menggunakan pendekatan konstruksi berbasis komponen. Jika tiap-tiap kebutuhan dan batasan ruang lingkup projek telah diketahui dengan baik, proses RAD memungkinkan tim pengembang untuk menciptakan sebuah “sistem yang berfungsi penuh” dalam jangka waktu yang sangat singkat.
+
+Sedangkan menurut Kendall (2010), RAD adalah suatu pendekatan berorientasi objek terhadap pengembangan sistem yang mencakup suatu metode pengembangan serta perangkat-perangkat lunak. RAD bertujuan mempersingkat waktu yang biasanya diperlukan dalam siklus hidup pengembangan sistem tradisional antara perancangan dan penerapan suatu sistem informasi. Pada akhirnya, RAD sama-sama berusaha memenuhi syarat-syarat bisnis yang berubah secara cepat.  Dari definisi-definisi konsep RAD ini, dapat dilihat bahwa pengembangan aplikasi dengan menggunakan metode RAD ini dapat dilakukan dalam waktu yang relatif lebih cepat.
+
+**Fase dan Tahapan Pengembangan Aplikasi**
+
+Menurut Kendall (2010), terdapat tiga fase dalam RAD yang melibatkan penganalisis dan pengguna dalam tahap penilaian, perancangan, dan penerapan. Adapun ketiga fase tersebut adalah requirements planning (perencanaan syarat-syarat), RAD design workshop (workshop desain RAD), dan implementation (implementasi). Sesuai dengan metodologi RAD menurut Kendall (2010), berikut ini adalah tahap-tahap pengembangan aplikasi dari tiap-tiap fase pengembangan aplikasi.
+
+1)  Requirements Planning (Perencanaan Syarat-Syarat)
+  - Dalam fase ini, pengguna dan penganalisis bertemu untuk mengidentifikasikan tujuan-tujuan aplikasi atau sistem serta untuk megidentifikasikan syarat-syarat informasi yang ditimbulkan dari tujuan-tujuan tersebut. Orientasi dalam fase ini adalah menyelesaikan masalah-masalah perusahaan. Meskipun teknologi informasi dan sistem bisa mengarahkan sebagian dari sistem yang diajukan, fokusnya akan selalu tetap pada upaya pencapaian tujuan-tujuan perusahaan.
+
+2)  RAD Design Workshop (Workshop Desain RAD)
+  - Fase ini adalah fase untuk merancang dan memperbaiki yang bisa digambarkan sebagai workshop. Penganalisis dan dan pemrogram dapat bekerja membangun dan menunjukkan representasi visual desain dan pola kerja kepada pengguna. Workshop desain ini dapat dilakukan selama beberapa hari tergantung dari ukuran aplikasi yang akan dikembangkan. Selama workshop desain RAD, pengguna merespon prototipe yang ada dan penganalisis memperbaiki modul-modul yang dirancang berdasarkan respon pengguna. Apabila sorang pengembangnya merupakan pengembang atau pengguna yang berpengalaman, Kendall menilai bahwa usaha kreatif ini dapat mendorong pengembangan sampai pada tingkat terakselerasi.
+
+3)  Implementation (Implementasi)
+  - Pada fase implementasi ini, penganalisis bekerja dengan para pengguna secara intens selama workshop dan merancang aspek-aspek   bisnis dan nonteknis perusahaan. Segera setelah aspek-aspek ini disetujui dan sistem-sistem dibangun dan disaring, sistem-sistem baru atau bagian dari sistem diujicoba dan kemudian diperkenalkan kepada organisasi.
+
+Pertimbangan Pemilihan Metode RAD
+
+1. Memiliki pengerjaan waktu yang relatif singkat
+2. Tidak diperlukan jumlah personil yang relatif banyak
+3. Anggaran yang dibutuhkan dalam membuat aplikasi dapat disederhanakan, mengingat sedikitnya tahapan dalam metode ini
+4. Metode ini sangat cocok dalam pengembangan aplikasi yang berfokus pada tenggat waktu penyelesaian yang cepat
+5. Perubahan pada desain aplikasi dapat berjalan dengan cepat
+6. Hubungan antara developer dan client dapat lebih kuat karena client dilibatkan langsung dalam pengembangan aplikasi
+
+
+#### D. Cost Calculation	
+
+### [ON PROGRESS]
