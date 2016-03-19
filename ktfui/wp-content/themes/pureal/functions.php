@@ -25,6 +25,36 @@
 	add_action('after_setup_theme', 'init_wp_setup');
 
 
+	/* add new widget location */
+	function init_widget(){
+		register_sidebar(array(
+			'name' => 'Sidebar',
+			'id' => 'sidebar1',
+			'before_widget' => '<div class="widget-item">',
+			'after_widget' => '</div>',
+			'before_title' => '<h4 class="widget-item-title">',
+			'after_title' => '</h4>',
+		));
+		register_sidebar(array(
+			'name' => 'Footer Area 1',
+			'id' => 'footer1'
+		));
+		register_sidebar(array(
+			'name' => 'Footer Area 2',
+			'id' => 'footer2'
+		));
+		register_sidebar(array(
+			'name' => 'Footer Area 3',
+			'id' => 'footer3'
+		));
+		register_sidebar(array(
+			'name' => 'Footer Area 4',
+			'id' => 'footer4'
+		));
+	}
+	add_action('widgets_init', 'init_widget');
+
+
 	/* Customize excerpt word length */
 	function set_excerpt_length(){
 		return 30;
