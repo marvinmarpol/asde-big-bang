@@ -1,6 +1,7 @@
-# [Name Your Project Here]
+# KTF UI's Website
 
-[Describe your project here]
+Komunitas Tari Fisip Universitas Indonesia (KTF UI) wishes to have a profesional website that look like a company profile. They want to shows the documentation on their show such as photos and videos. They also want the site to list their experiences and achievements. The organisation already has their own design and want to have a responsive website template. The organisation will be
+responsible for creating all text and image content.
 
 ## Team Member
 
@@ -15,7 +16,7 @@
 
 ## User Documentation
 
-Find it [Here] (https://github.com/gunadarma-academy/asde-big-bang/blob/master/ktfui-DOCUMENTATION)
+### [FIND IT HERE :D] (https://github.com/gunadarma-academy/asde-big-bang/blob/master/ktfui-DOCUMENTATION)
 
 [Explanation about the project requirements, analysis, design, architecture, components, interfaces, evaluation, presentation, and other characteristics.]
 
@@ -24,6 +25,7 @@ Find it [Here] (https://github.com/gunadarma-academy/asde-big-bang/blob/master/k
 ## Technical Documentation
 
 [How to develop, build, and use it.]
+### [On Progress]
 
 --------------------------------------------------
 
