@@ -11,7 +11,7 @@
 
 	<body <?php body_class(); ?>>
 		<div id="header-navigation">
-			<span id="logo" class="vertical-middle"><a href="#">LOGO</a></span>
+			<span id="logo" class="vertical-middle"><a href="<?php bloginfo( 'url' ); ?>">LOGO</a></span>
 			<?php
 				$args = array(
 					'theme_location' => 'primary'

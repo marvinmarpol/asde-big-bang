@@ -60,4 +60,68 @@
 		return 30;
 	}
 	add_filter('excerpt_length', 'set_excerpt_length');
+
+
+	/* theme customization */
+	function init_theme_customization($wp_customize){
+		/* Panel for header options */
+		$wp_customize->add_panel('header_options', array(
+			'title' => __('Header Options'),
+			'priority' => 30
+		));
+
+		/* Panel for header colors */
+		$wp_customize->add_section('header_colors', array(
+			'title' => __('Header Colors', 'pureal'),
+			'panel' => 'header_options',
+			'priority' => 1
+		));
+
+		/* Header Link Color */
+		$wp_customize->add_setting('header_link_color', array(
+			'default' => '#fff',
+			'transport' => 'postMessage'
+		));
+		$wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'header_color_control', array(
+			'label' => __('Header Link Color', 'pureal'),
+			'section' => 'header_colors',
+			'settings' => 'header_link_color'
+		)) );
+
+		/* Header Background Color */
+		$wp_customize->add_setting('header_bg_color', array(
+			'default' => '#fff',
+			'transport' => 'postMessage'
+		));
+		$wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'header_bgcolor_control', array(
+			'label' => __('Header Background Color', 'pureal'),
+			'section' => 'header_colors',
+			'settings' => 'header_bg_color'
+		)) );
+	}
+	add_action('customize_register', 'init_theme_customization');
+
+
+	/* output theme customization css */
+	function update_custom_css(){
+?>
+	<style type="text/css">
+		#header-navigation{
+			background-color: <?php echo get_theme_mod('header_bg_color'); ?>;
+		}
+
+		#header-navigation a{
+			color: <?php echo get_theme_mod('header_link_color'); ?>;
+		}
+	</style>
+<?php
+	}
+	add_action('wp_head', 'update_custom_css');
+	
+
+	/* enable live preview */
+	function my_preview_js() {
+		wp_enqueue_script( 'custom_css_preview', get_template_directory_uri().'/js/customizepreview.js', array( 'jquery','customize-preview' ) );
+	}
+	add_action( 'customize_preview_init', 'my_preview_js' );
 ?>
