@@ -1,7 +1,10 @@
 # KTF UI's Website
 
-Komunitas Tari Fisip Universitas Indonesia (KTF UI) wishes to have a profesional website that look like a company profile. They want to shows the documentation on their show such as photos and videos. They also want the site to list their experiences and achievements. The organisation already has their own design and want to have a responsive website template. The organisation will be
-responsible for creating all text and image content.
+Komunitas Tari Fisip Universitas Indonesia (KTF UI) wishes to have a professional website that look like a company profile. They want to shows the documentation on their show such as text, photos and videos linked to youtube. 
+
+The site will have approximately 10 pages which are Home, What we offer (Traditional, Modern, Music), Achievements, Gallery, Project, Contact and About. The organisation already has their own design and want to have a responsive website template. The organisation will be responsible for creating all text and image content. 
+
+The organisation have sufficient knowledge to manage a website but want help in making the users with certain mandatory to log into wordpress dashboard. The organisation already bought hosting service and would like to launch the site in a month (approximately beginning of May).
 
 ## Team Member
 
