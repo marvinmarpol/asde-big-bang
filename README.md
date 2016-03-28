@@ -1,6 +1,10 @@
-# [Name Your Project Here]
+# KTF UI's Website
 
-[Describe your project here]
+Komunitas Tari Fisip Universitas Indonesia (KTF UI) wishes to have a professional website that look like a company profile. They want to shows the documentation on their show such as text, photos and videos linked to youtube. 
+
+The site will have approximately 10 pages which are Home, What we offer (Traditional, Modern, Music), Achievements, Gallery, Project, Contact and About. The organisation already has their own design and want to have a responsive website template. The organisation will be responsible for creating all text and image content. 
+
+The organisation have sufficient knowledge to manage a website but want help in making the users with certain mandatory to log into wordpress dashboard. The organisation already bought hosting service and would like to launch the site in a month (approximately beginning of May).
 
 ## Team Member
 
@@ -15,7 +19,7 @@
 
 ## User Documentation
 
-Find it [Here] (https://github.com/gunadarma-academy/asde-big-bang/blob/master/ktfui-DOCUMENTATION)
+### [FIND IT HERE :D] (https://github.com/gunadarma-academy/asde-big-bang/blob/master/ktfui-DOCUMENTATION)
 
 [Explanation about the project requirements, analysis, design, architecture, components, interfaces, evaluation, presentation, and other characteristics.]
 
@@ -24,6 +28,7 @@ Find it [Here] (https://github.com/gunadarma-academy/asde-big-bang/blob/master/k
 ## Technical Documentation
 
 [How to develop, build, and use it.]
+### [On Progress]
 
 --------------------------------------------------
 
