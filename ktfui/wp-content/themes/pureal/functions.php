@@ -1,13 +1,15 @@
 <?php
 	/* init stylesheet */
-	function init_style(){
+	function pureal_init_style(){
 		wp_enqueue_style( 'style', get_stylesheet_uri() );
+		/*echo get_template_directory_uri ();
+		echo (get_theme_mod('header_pad_top_bottom', '10')*0.5).'px';*/
 	}
-	add_action('wp_enqueue_scripts', 'init_style');
+	add_action('wp_enqueue_scripts', 'pureal_init_style');
 
 
 	/* init wp setup */
-	function init_wp_setup(){
+	function pureal_init_wp_setup(){
 		/* Navigation Menus */
 		register_nav_menus( array(
 			'primary' => __( 'Primary Menu' ),
@@ -16,17 +18,38 @@
 
 		/* add feature image support */
 		add_theme_support('post-thumbnails');
-		add_image_size('small-thumbnail', 180, 120, true); //hardcrop=true
-		add_image_size('fullwidth-banner', 920, 210, array('left', 'top'));
+		//add_image_size('small-thumbnail', 180, 120, true); //hardcrop=true
+		//add_image_size('fullwidth-banner', 920, 210, array('left', 'top'));
 
 		/* add post format support */
 		//add_theme_support('post-formats', array('aside', 'gallery', 'link'));
 	}
-	add_action('after_setup_theme', 'init_wp_setup');
+	add_action('after_setup_theme', 'pureal_init_wp_setup');
+
+
+	/* image upload sanitize callback */
+	function pureal_sanitize_image( $image, $setting ) {
+		/*
+		* Array of valid image file types.
+		* The array includes image mime types that are included in wp_get_mime_types()
+		*/
+		$mimes = array(
+			'jpg|jpeg|jpe' => 'image/jpeg',
+			'gif'          => 'image/gif',
+			'png'          => 'image/png',
+			'bmp'          => 'image/bmp',
+			'tif|tiff'     => 'image/tiff',
+			'ico'          => 'image/x-icon'
+		);
+		// Return an array with file extension and mime_type.
+		$file = wp_check_filetype( $image, $mimes );
+		// If $image has a valid mime_type, return it; otherwise, return the default.
+		return ( $file['ext'] ? $image : $setting->default );
+	}
 
 
 	/* add new widget location */
-	function init_widget(){
+	function pureal_init_widget(){
 		register_sidebar(array(
 			'name' => 'Sidebar',
 			'id' => 'sidebar1',
@@ -52,29 +75,63 @@
 			'id' => 'footer4'
 		));
 	}
-	add_action('widgets_init', 'init_widget');
+	add_action('widgets_init', 'pureal_init_widget');
 
 
 	/* Customize excerpt word length */
-	function set_excerpt_length(){
+	function pureal_set_excerpt_length(){
 		return 30;
 	}
-	add_filter('excerpt_length', 'set_excerpt_length');
+	add_filter('excerpt_length', 'pureal_set_excerpt_length');
 
 
 	/* theme customization */
-	function init_theme_customization($wp_customize){
+	function pureal_init_theme_customization($wp_customize){
 		/* Panel for header options */
 		$wp_customize->add_panel('header_options', array(
 			'title' => __('Header Options'),
 			'priority' => 30
 		));
 
-		/* Panel for header colors */
+		/* Panel for footer options */
+		$wp_customize->add_panel('footer_options', array(
+			'title' => __('Footer Options'),
+			'priority' => 40
+		));
+
+		/* Section for header colors */
 		$wp_customize->add_section('header_colors', array(
 			'title' => __('Header Colors', 'pureal'),
 			'panel' => 'header_options',
+			'priority' => 2
+		));
+
+		/* Section for header size */
+		$wp_customize->add_section('header_sizes', array(
+			'title' => __('Header Sizes', 'pureal'),
+			'panel' => 'header_options',
+			'priority' => 3
+		));
+
+		/* Section for header logo */
+		$wp_customize->add_section('head_logo', array(
+			'title' => __('Header Logo', 'pureal'),
+			'panel' => 'header_options',
 			'priority' => 1
+		));
+
+		/* Section for footer colors */
+		$wp_customize->add_section('footer_colors', array(
+			'title' => __('Footer Colors', 'pureal'),
+			'panel' => 'footer_options',
+			'priority' => 1
+		));
+
+		/* Section for footer size */
+		$wp_customize->add_section('footer_sizes', array(
+			'title' => __('Footer Sizes', 'pureal'),
+			'panel' => 'footer_options',
+			'priority' => 2
 		));
 
 		/* Header Link Color */
@@ -88,9 +145,41 @@
 			'settings' => 'header_link_color'
 		)) );
 
+		/* Header Link Hover Color and opacity */
+		$wp_customize->add_setting('header_link_hover_color', array(
+			'default' => '#fff',
+			'transport' => 'postMessage'
+		));
+		$wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'header_link_hover_control', array(
+			'label' => __('Header Link Hover Color', 'pureal'),
+			'section' => 'header_colors',
+			'settings' => 'header_link_hover_color'
+		)) );
+		$wp_customize->add_setting('header_link_hover_opacity', array(
+			'default' => 70,
+			'transport' => 'postMessage'
+		));
+		$wp_customize->add_control('header_link_hover_opacity_control', array(
+			'label' => __('Header Link Hover Opacity', 'pureal'),
+			'type' => 'range',
+			'section' => 'header_colors',
+			'settings' => 'header_link_hover_opacity'
+		));
+
+		/* Header Text Color */
+		$wp_customize->add_setting('header_text_color', array(
+			'default' => '#fff',
+			'transport' => 'postMessage'
+		));
+		$wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'header_text_color_control', array(
+			'label' => __('Header Text Color', 'pureal'),
+			'section' => 'header_colors',
+			'settings' => 'header_text_color'
+		)) );
+
 		/* Header Background Color */
 		$wp_customize->add_setting('header_bg_color', array(
-			'default' => '#fff',
+			'default' => '#4c1b1b',
 			'transport' => 'postMessage'
 		));
 		$wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'header_bgcolor_control', array(
@@ -98,30 +187,131 @@
 			'section' => 'header_colors',
 			'settings' => 'header_bg_color'
 		)) );
+
+		/* Header paddings */
+		$wp_customize->add_setting('header_pad_top_bottom', array(
+			'default' => 25,
+			'transport' => 'postMessage'
+		));
+		$wp_customize->add_control('header_pad_top_bottom_control', array(
+			'label' => __('Header Height', 'pureal'),
+			'type' => 'range',
+			'section' => 'header_sizes',
+			'settings' => 'header_pad_top_bottom'
+		));
+		$wp_customize->add_setting('header_pad_left_right', array(
+			'default' => 10,
+			'transport' => 'postMessage'
+		));
+		$wp_customize->add_control('header_pad_left_right_control', array(
+			'label' => __('Header Left and Right Padding', 'pureal'),
+			'type' => 'range',
+			'section' => 'header_sizes',
+			'settings' => 'header_pad_left_right'
+		));
+
+		/* Header logo */
+		$wp_customize->add_setting('header_logo', array(
+			'transport' => 'postMessage',
+			'default-image' => 'http://gwenty.com/example/wp-content/themes/gwenty/images/HalfShotbw.jpg',
+			'sanitize' => 'pureal_sanitize_image'
+		));
+		$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'header_logo_control', array(
+			'label' => __( 'Header Logo', 'pureal' ),
+			'section' => 'head_logo',
+			'mime_type' => 'image',
+			'settings' => 'header_logo'
+		)) );
+
+		/* Header logo height */
+		$wp_customize->add_setting('header_logo_height', array(
+			'default' => 50,
+			'transport' => 'postMessage'
+		));
+		$wp_customize->add_control('header_logo_height_control', array(
+			'label' => __('Header Logo Height', 'pureal'),
+			'type' => 'range',
+			'section' => 'head_logo',
+			'settings' => 'header_logo_height'
+		));
+
+		/* Footer paddings */
+		$wp_customize->add_setting('footer_pad_top_bottom', array(
+			'default' => 25,
+			'transport' => 'postMessage'
+		));
+		$wp_customize->add_control('footer_pad_top_bottom_control', array(
+			'label' => __('Footer Height', 'pureal'),
+			'type' => 'range',
+			'section' => 'footer_sizes',
+			'settings' => 'footer_pad_top_bottom'
+		));
+		$wp_customize->add_setting('footer_pad_left_right', array(
+			'default' => 10,
+			'transport' => 'postMessage'
+		));
+		$wp_customize->add_control('footer_pad_left_right_control', array(
+			'label' => __('Footer Left and Right Padding', 'pureal'),
+			'type' => 'range',
+			'section' => 'footer_sizes',
+			'settings' => 'footer_pad_left_right'
+		));
+
+		/* Footer Background Color */
+		$wp_customize->add_setting('footer_bg_color', array(
+			'default' => '#212121',
+			'transport' => 'postMessage'
+		));
+		$wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'footer_bgcolor_control', array(
+			'label' => __('Footer Background Color', 'pureal'),
+			'section' => 'footer_colors',
+			'settings' => 'footer_bg_color'
+		)) );
 	}
-	add_action('customize_register', 'init_theme_customization');
+	add_action('customize_register', 'pureal_init_theme_customization');
 
 
 	/* output theme customization css */
-	function update_custom_css(){
+	function pureal_update_custom_css(){
 ?>
 	<style type="text/css">
 		#header-navigation{
-			background-color: <?php echo get_theme_mod('header_bg_color'); ?>;
+			padding: <?php echo get_theme_mod('header_pad_top_bottom', 25).'px '.(get_theme_mod('header_pad_left_right', 10)*0.25).'%'; ?>;
+			background-color: <?php echo get_theme_mod('header_bg_color', '#4c1b1b'); ?>;
+			color: <?php echo get_theme_mod('header_text_color', '#fff'); ?>;
+		}
+
+		#header-navigation ul ul {
+			background-color: <?php echo get_theme_mod('header_bg_color', '#4c1b1b'); ?>;
 		}
 
 		#header-navigation a{
-			color: <?php echo get_theme_mod('header_link_color'); ?>;
+			color: <?php echo get_theme_mod('header_link_color', '#fff'); ?>;
+		}
+
+		#header-navigation a:hover{
+			color: <?php echo get_theme_mod('header_link_hover_color', '#fff'); ?>;
+			opacity: <?php echo (get_theme_mod('header_link_hover_opacity', 70))*0.01; ?>;
+			filter: alpha(opacity=<?php echo get_theme_mod('header_link_hover_opacity', 70); ?>);
+		}
+
+		#logo-image{
+			height: <?php echo (get_theme_mod('header_logo_height', 50)+50).'px'; ?>;
+		}
+
+		#footer-navigation{
+			padding: <?php echo get_theme_mod('footer_pad_top_bottom', 25).'px '.(get_theme_mod('footer_pad_left_right', 10)*0.25).'%'; ?>;
+			background-color: <?php echo get_theme_mod('footer_bg_color', '#212121'); ?>;
 		}
 	</style>
 <?php
 	}
-	add_action('wp_head', 'update_custom_css');
+	add_action('wp_head', 'pureal_update_custom_css');
 	
 
 	/* enable live preview */
-	function my_preview_js() {
+	function pureal_preview_js() {
 		wp_enqueue_script( 'custom_css_preview', get_template_directory_uri().'/js/customizepreview.js', array( 'jquery','customize-preview' ) );
 	}
-	add_action( 'customize_preview_init', 'my_preview_js' );
+	add_action( 'customize_preview_init', 'pureal_preview_js' );
 ?>

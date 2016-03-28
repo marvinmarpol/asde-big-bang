@@ -1,15 +1,14 @@
 <?php get_header(); ?>
-	<div id="landing-home" class="row-fullwidth">
-		<div class="row-fullwidth-container">
-			
-		</div>
+	<div class="row">
+		<?php
+			while(have_posts()) : the_post(); ?>
+				<?php get_template_part('content'); ?>
+		<?php endwhile; ?>
 	</div>
-	<div class="row-fullwidth">
-		<div class="row-fullwidth-container">
-			<h1>OUR SPECIALITY</h1>
-			<a class="rounded" href="#"><img src="#"/></a>
-			<a class="rounded" href="#"><img src="#"/></a>
-			<a class="rounded" href="#"><img src="#"/></a>
-		</div>
+	<div class="row">
+		<?php
+			while(have_posts()) : the_post(); ?>
+				<?php get_template_part('content'); ?>
+		<?php endwhile; ?>
 	</div>
 <?php get_footer(); ?>

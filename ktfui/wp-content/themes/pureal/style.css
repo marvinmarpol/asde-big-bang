@@ -19,7 +19,7 @@ body {
 	font-family: sans-serif;
 }
 
-ul, li {
+ul, li, p {
 	margin: 0;
 	padding: 0;
 }
@@ -34,8 +34,8 @@ a {
 
 #header-navigation,
 #footer-navigation {
-	min-height: 50px;
 	padding: 0 10%;
+	text-align: center;
 }
 
 #header-navigation a,
@@ -53,6 +53,10 @@ a {
 #footer-navigation a:hover {
 	opacity: 0.7;
 	filter: alpha(opacity=70);
+}
+
+#main-content{
+	text-align: center;
 }
 
 .menu-primary-links-container{
@@ -82,26 +86,69 @@ a {
 	vertical-align: middle;
 }
 
-.row-fullwidth{
-	display: inline-block;
-	width: 100%;
+.row{
+	display: table;
+	padding: 1% 10%;
+	background-color: #eee;
 }
 
-.row-fullwidth-container{
-	padding: 0 10%;
-	min-height: 480px;
-	text-align: center;
+.col-12 {
+  width: 100%;
+}
+.col-11 {
+  width: 91.66666667%;
+}
+.col-10 {
+  width: 83.33333333%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-8 {
+  width: 66.66666667%;
+}
+.col-7 {
+  width: 58.33333333%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-5 {
+  width: 41.66666667%;
+}
+.col-4 {
+  width: 33.33333333%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-2 {
+  width: 16.66666667%;
+}
+.col-1 {
+  width: 8.33333333%;
 }
 
 /*Header navigation menu*/
 #header-navigation {
 	background-color: #4c1b1b;
-	text-align: right;
 }
 
 #logo{
 	display: inline-block;
-	float: left;
+	width: 49.5%;
+	text-align: left;
+}
+
+#header-menu{
+	display: inline-block;
+	width: 49.5%;
+	text-align: right;
+}
+
+#logo-image{
+	width: auto;
+	max-height: 200px;
 }
 
 #header-navigation ul li {
@@ -115,9 +162,6 @@ a {
 	position: absolute;
 	top: 100%;
 	left: 0;
-	background: #212121;
-	opacity: 0.95;
-	filter: alpha(opacity=95);
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
@@ -132,20 +176,23 @@ a {
 	display: block;
 }
 
-#header-navigation a {
-	display: inline-block;
-	padding: 20px;
+#header-menu a {
+	padding: 10px;
 	margin: 0;
 }
 
 /*Home Page*/
 #landing-home{
-	background-color: #ccc;
+	background-color: #000;
 }
 
 /*Footer navigation menu*/
 #footer-navigation {
 	background-color: #212121;
+}
+
+#footer-navigation p{
+	color: #fff;
 }
 
 #footer-navigation a {
