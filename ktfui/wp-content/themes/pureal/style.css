@@ -89,7 +89,11 @@ a {
 .row{
 	display: table;
 	padding: 1% 10%;
-	background-color: #eee;
+}
+
+.col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1{
+	display: inline-block;
+	vertical-align: top;
 }
 
 .col-12 {
@@ -128,6 +132,55 @@ a {
 .col-1 {
   width: 8.33333333%;
 }
+
+.metaslider .nivo-caption {
+	display: inline-block;
+	padding: 12.75% 0;
+	vertical-align: middle;
+	background-color: transparent;
+	color: white;
+	opacity: 1;
+}
+
+.metaslider .nivo-caption h1{
+	font-size: 6em;
+	margin: 0;
+}
+
+.red-highlight, .black-highlight, .green-highlight{
+	display: inline-block;
+	padding: 10px;
+	color: #fff;
+	font-family: fantasy;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.red-highlight{
+	background-color: rgba(76, 27, 27, 0.68);
+}
+
+.black-highlight{
+	background-color: rgba(27, 27, 27, 0.68);
+}
+
+.green-highlight{
+	background-color: rgba(27, 128, 27, 0.68);
+}
+
+.white-transparent-button{
+	padding: 10px 15px;
+	margin: 15px;
+	border: 3px solid #fff;
+	background-color: transparent;
+	color: #fff;
+	font-size: 1.25em;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
 
 /*Header navigation menu*/
 #header-navigation {
@@ -189,10 +242,6 @@ a {
 /*Footer navigation menu*/
 #footer-navigation {
 	background-color: #212121;
-}
-
-#footer-navigation p{
-	color: #fff;
 }
 
 #footer-navigation a {

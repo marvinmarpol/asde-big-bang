@@ -8,6 +8,20 @@
 	add_action('wp_enqueue_scripts', 'pureal_init_style');
 
 
+	/* init script */
+	/*function pureal_init_scripts(){
+		// Register the script like this for a plugin:
+		//wp_register_script( 'custom-script', plugins_url( '/js/custom-script.js', __FILE__ ) );
+
+		// Register the script like this for a theme:
+		wp_register_script( 'custom-script', get_template_directory_uri() . '/js/toast.js' );
+		
+		// For either a plugin or a theme, you can then enqueue the script:
+		wp_enqueue_script( 'custom-script' );
+	}
+	add_action( 'wp_enqueue_scripts', 'pureal_init_scripts');*/
+
+
 	/* init wp setup */
 	function pureal_init_wp_setup(){
 		/* Navigation Menus */
@@ -267,6 +281,49 @@
 			'section' => 'footer_colors',
 			'settings' => 'footer_bg_color'
 		)) );
+
+		/* Footer Text Color */
+		$wp_customize->add_setting('footer_text_color', array(
+			'default' => '#fff',
+			'transport' => 'postMessage'
+		));
+		$wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'footer_text_color_control', array(
+			'label' => __('Footer Text Color', 'pureal'),
+			'section' => 'footer_colors',
+			'settings' => 'footer_text_color'
+		)) );
+
+		/* Footer Link Color */
+		$wp_customize->add_setting('footer_link_color', array(
+			'default' => '#fff',
+			'transport' => 'postMessage'
+		));
+		$wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'footer_color_control', array(
+			'label' => __('Footer Link Color', 'pureal'),
+			'section' => 'footer_colors',
+			'settings' => 'footer_link_color'
+		)) );
+
+		/* Footer Link Hover Color and opacity */
+		$wp_customize->add_setting('footer_link_hover_color', array(
+			'default' => '#fff',
+			'transport' => 'postMessage'
+		));
+		$wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'footer_link_hover_control', array(
+			'label' => __('Footer Link Hover Color', 'pureal'),
+			'section' => 'footer_colors',
+			'settings' => 'footer_link_hover_color'
+		)) );
+		$wp_customize->add_setting('footer_link_hover_opacity', array(
+			'default' => 70,
+			'transport' => 'postMessage'
+		));
+		$wp_customize->add_control('footer_link_hover_opacity_control', array(
+			'label' => __('Footer Link Hover Opacity', 'pureal'),
+			'type' => 'range',
+			'section' => 'footer_colors',
+			'settings' => 'footer_link_hover_opacity'
+		));
 	}
 	add_action('customize_register', 'pureal_init_theme_customization');
 
@@ -302,6 +359,17 @@
 		#footer-navigation{
 			padding: <?php echo get_theme_mod('footer_pad_top_bottom', 25).'px '.(get_theme_mod('footer_pad_left_right', 10)*0.25).'%'; ?>;
 			background-color: <?php echo get_theme_mod('footer_bg_color', '#212121'); ?>;
+			color: <?php echo get_theme_mod('footer_text_color', '#fff'); ?>;
+		}
+
+		#footer-navigation a{
+			color: <?php echo get_theme_mod('footer_link_color', '#fff'); ?>;
+		}
+
+		#footer-navigation a:hover{
+			color: <?php echo get_theme_mod('footer_link_hover_color', '#fff'); ?>;
+			opacity: <?php echo (get_theme_mod('footer_link_hover_opacity', 70))*0.01; ?>;
+			filter: alpha(opacity=<?php echo get_theme_mod('footer_link_hover_opacity', 70); ?>);
 		}
 	</style>
 <?php
@@ -314,4 +382,3 @@
 		wp_enqueue_script( 'custom_css_preview', get_template_directory_uri().'/js/customizepreview.js', array( 'jquery','customize-preview' ) );
 	}
 	add_action( 'customize_preview_init', 'pureal_preview_js' );
-?>
