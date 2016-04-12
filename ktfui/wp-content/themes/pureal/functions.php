@@ -333,13 +333,9 @@
 ?>
 	<style type="text/css">
 		#header-navigation{
-			padding: <?php echo get_theme_mod('header_pad_top_bottom', 25).'px '.(get_theme_mod('header_pad_left_right', 10)*0.25).'%'; ?>;
+			padding: <?php echo '0 '.(get_theme_mod('header_pad_left_right', 10)*0.25).'%'; ?>;
 			background-color: <?php echo get_theme_mod('header_bg_color', '#4c1b1b'); ?>;
 			color: <?php echo get_theme_mod('header_text_color', '#fff'); ?>;
-		}
-
-		#header-navigation ul ul {
-			background-color: <?php echo get_theme_mod('header_bg_color', '#4c1b1b'); ?>;
 		}
 
 		#header-navigation a{
@@ -356,6 +352,18 @@
 			height: <?php echo (get_theme_mod('header_logo_height', 50)+50).'px'; ?>;
 		}
 
+		#header-menu{
+			padding-top: <?php echo get_theme_mod('header_pad_top_bottom', 25);?>;
+		}
+
+		#header-menu ul ul {
+			background-color: <?php echo get_theme_mod('header_bg_color', '#4c1b1b'); ?>;
+		}
+
+		#header-menu ul li+li:before{
+			color: <?php echo get_theme_mod('header_link_color', '#fff'); ?>;
+		}
+
 		#footer-navigation{
 			padding: <?php echo get_theme_mod('footer_pad_top_bottom', 25).'px '.(get_theme_mod('footer_pad_left_right', 10)*0.25).'%'; ?>;
 			background-color: <?php echo get_theme_mod('footer_bg_color', '#212121'); ?>;
@@ -370,6 +378,44 @@
 			color: <?php echo get_theme_mod('footer_link_hover_color', '#fff'); ?>;
 			opacity: <?php echo (get_theme_mod('footer_link_hover_opacity', 70))*0.01; ?>;
 			filter: alpha(opacity=<?php echo get_theme_mod('footer_link_hover_opacity', 70); ?>);
+		}
+
+		@media (max-width: 600px) {
+			/* General */
+			.col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1{
+				display: block;
+				width: 100%;
+			}
+
+			#header-navigation,
+			#footer-navigation {
+				padding: 0 1%;
+				text-align: center;
+			}
+
+			#logo{
+				display: block;
+				width: initial;
+				text-align: center;
+			}
+
+			#header-menu{
+				display: none;
+				width: initial;
+			}
+
+			#header-menu ul li{
+				display: block;
+				border-top: 1px solid #ccc;
+			}
+
+			#header-menu ul li:first-child{
+				border: none;
+			}
+
+			#header-menu ul li+li:before{
+				content: none;
+			}
 		}
 	</style>
 <?php

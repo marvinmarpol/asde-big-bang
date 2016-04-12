@@ -11,8 +11,12 @@
 
 	<body <?php body_class(); ?>>
 		<div id="header-navigation">
-			<div id="logo" class="vertical-middle"><a href="<?php bloginfo( 'url' ); ?>"><img id="logo-image" src="<?php if (get_theme_mod( 'header_logo' )) : echo get_theme_mod( 'header_logo'); else: echo get_template_directory_uri().'/images/HalfShotbw.jpg'; endif; ?>" /></a></div>
-			<div id="header-menu">
+			<div id="logo">
+				<a href="<?php bloginfo( 'url' ); ?>"><img id="logo-image" class="vertical-middle" src="<?php if (get_theme_mod( 'header_logo' )) : echo get_theme_mod( 'header_logo'); else: echo get_template_directory_uri().'/images/HalfShotbw.jpg'; endif; ?>" />
+					<div id="logo-text" class="vertical-middle"><p>Komunitas Tari FISIP UI<br>Radha Sarisha</p></div>
+				</a>
+			</div>
+			<div id="header-menu" class="vertical-bottom">
 			<?php
 				$args = array(
 					'theme_location' => 'primary'

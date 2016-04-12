@@ -2,13 +2,8 @@
 	<div class="row">
 		<?php
 			while(have_posts()) : the_post(); ?>
-				<?php get_template_part('content'); ?>
-		<?php endwhile; ?>
-	</div>
-	<div class="row">
-		<?php
-			while(have_posts()) : the_post(); ?>
-				<?php get_template_part('content'); ?>
+				<div class="col-4"><?php get_template_part('content'); ?></div>
+				<div class="col-4"><?php //get_template_part('content'); echo 'ij oiji oj iojio joi '; ?></div>
 		<?php endwhile; ?>
 	</div>
 <?php get_footer(); ?>

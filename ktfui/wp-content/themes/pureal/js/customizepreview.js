@@ -80,8 +80,7 @@
 	wp.customize( 'header_pad_top_bottom', function( value ) {
 		value.bind( function( to ) {
 			toast('+ ' + to+' px');
-			$( '#header-navigation' ).css("padding-top", to);
-			$( '#header-navigation' ).css("padding-bottom", to);
+			$( '#header-menu' ).css("padding-top", to);
 		} );
 	} );
 
