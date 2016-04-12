@@ -5,7 +5,7 @@
 		/*echo get_template_directory_uri ();
 		echo (get_theme_mod('header_pad_top_bottom', '10')*0.5).'px';*/
 	}
-	add_action('wp_enqueue_scripts', 'pureal_init_style');
+	add_action('wp_enqueue_scripts', 	'pureal_init_style');
 
 
 	/* init script */
@@ -376,8 +376,8 @@
 
 		#footer-navigation a:hover{
 			color: <?php echo get_theme_mod('footer_link_hover_color', '#fff'); ?>;
-			opacity: <?php echo (get_theme_mod('footer_link_hover_opacity', 70))*0.01; ?>;
-			filter: alpha(opacity=<?php echo get_theme_mod('footer_link_hover_opacity', 70); ?>);
+			opacity: <?php echo (get_theme_mod('footer_link_hover_opacity', 80))*0.01; ?>;
+			filter: alpha(opacity=<?php echo get_theme_mod('footer_link_hover_opacity', 80); ?>);
 		}
 
 		@media (max-width: 600px) {
