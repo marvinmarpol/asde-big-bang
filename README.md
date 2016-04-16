@@ -31,12 +31,6 @@ We combine user documentation and user reports on the same document. The documen
 
 [How to develop, build, and use it.]
 
---------------------------------------------------
-
-## General Notes
-
-For the most updated notes, see <https://github.com/gunadarma-academy/ASDE>. This README is a template from <https://github.com/gunadarma-academy/asde-project>.
-
 ### Materials
 
 + Introduction
@@ -59,3 +53,9 @@ For the most updated notes, see <https://github.com/gunadarma-academy/ASDE>. Thi
 + Presentation
   + Present the result to the class.
   + The winner will be chosen.
+
+--------------------------------------------------
+
+## General Notes
+
+For the most updated notes, see <https://github.com/gunadarma-academy/ASDE>. This README is a template from <https://github.com/gunadarma-academy/asde-project>.
