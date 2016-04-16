@@ -20,7 +20,7 @@
 * http://www.slideshare.net/dhiangga/modul-4-eselon-4-manajemen-proyek
 
 ###Pricing
-*https://ekit.co.uk/uploads/website-pricing/eKit-how-much-does-a-website-cost.pdf
+* https://ekit.co.uk/uploads/website-pricing/eKit-how-much-does-a-website-cost.pdf
 
 
 ##Complete EBooks Library
