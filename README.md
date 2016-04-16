@@ -22,10 +22,10 @@ The organisation have sufficient knowledge to manage a website but want help in 
 We combine user documentation and user reports on the same document. The document, among others:
 
 1. [Website Requirement Specification] (https://github.com/gunadarma-academy/asde-big-bang/blob/master/User-Report/1st%20User%20Report---Web-Req-Spec.pdf)
-    This document contain description and definition of website developed, use case diagram, components and features on the website and also enclosure from client interview
+[This document contain description and definition of website developed, use case diagram, components and features on the website and also enclosure from client interview]
 
 2. [Pricing] (https://github.com/gunadarma-academy/asde-big-bang/blob/master/User-Report/2nd%20User%20Report---Pricing.pdf)
-  This document contain list of features and jobs-to-do on the website with each price
+[This document contain list of features and jobs-to-do on the website with each price]
 
 ## Technical Documentation
 
@@ -50,13 +50,12 @@ For the most updated notes, see <https://github.com/gunadarma-academy/ASDE>. Thi
 ### Development Process
 
 + Ideation
-  + Choose an idea then present it.
-  + Constantly improve or iterate on the idea.
-  + The idea is a usable software application.
-  + Implement the idea using any kind of methods.
+  + Choose an idea then present it. [The idea was to developed a website for KTF UI]
+  + The idea is a usable software application. [Yes it is, based on Website Requirement Specification]
+  + Implement the idea using any kind of methods. [We are using RAD methods]
 + Build
-  + Document the software design and engineering theory sufficiently.
-  + Build the software using any kind of libraries or frameworks.
+  + Document the software design and engineering theory sufficiently. [Making of documentations, reports, and master test plan]
+  + Build the software using any kind of libraries or frameworks. [Developes website using CMS Wordpress]
 + Presentation
   + Present the result to the class.
   + The winner will be chosen.
