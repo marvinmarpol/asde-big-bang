@@ -19,12 +19,13 @@ The organisation have sufficient knowledge to manage a website but want help in 
 
 ## User Documentation
 
-We combine user documentation with user reports on the same document. The document, among others:
+We combine user documentation and user reports on the same document. The document, among others:
 
 1. [Website Requirement Specification] (https://github.com/gunadarma-academy/asde-big-bang/blob/master/User-Report/1st%20User%20Report---Web-Req-Spec.pdf)
-* This document contain description and definition of website developed, use case diagram, components and features on the website and also enclosure from client interview
+  This document contain description and definition of website developed, use case diagram, components and features on the website and also enclosure from client interview
+
 2. [Pricing] (https://github.com/gunadarma-academy/asde-big-bang/blob/master/User-Report/2nd%20User%20Report---Pricing.pdf)
-* This document contain list of features and jobs-to-do on the website with each price
+  This document contain list of features and jobs-to-do on the website with each price
 
 ## Technical Documentation
 
