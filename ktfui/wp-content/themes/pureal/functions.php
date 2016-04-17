@@ -2,6 +2,9 @@
 	/* init stylesheet */
 	function pureal_init_style(){
 		wp_enqueue_style( 'style', get_stylesheet_uri() );
+		if(is_front_page() ){
+			wp_enqueue_script( 'animate', get_template_directory_uri() . '/js/animate.js', array ( 'jquery' ), null, true);
+		}
 		/*echo get_template_directory_uri ();
 		echo (get_theme_mod('header_pad_top_bottom', '10')*0.5).'px';*/
 	}
@@ -380,7 +383,7 @@
 			filter: alpha(opacity=<?php echo get_theme_mod('footer_link_hover_opacity', 80); ?>);
 		}
 
-		@media (max-width: 600px) {
+		@media (max-width: 768px) {
 			/* General */
 			.col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1{
 				display: block;
@@ -415,6 +418,10 @@
 
 			#header-menu ul li+li:before{
 				content: none;
+			}
+
+			#profile img{
+				max-width: 100%;	
 			}
 		}
 	</style>
