@@ -1,9 +1,8 @@
 ( function( $ ) {
     var index = 0,
-        lastWinHeight = 643,
         animations = [
-                        new Animation($('.flexslider').first().height(), "#info-dances", "slide-in-after"),
-                        new Animation($('.flexslider').first().height()+$("#info-dances").height(), "#profile", "fade-in-after")
+                        new Animation($('.flexslider').first().height()-50, "#info-dances", "slide-in-after"),
+                        new Animation( ($('.flexslider').first().height()+$("#info-dances").height())-50, "#profile", "fade-in-after")
                     ];
 
     function Animation(yTrigger, targetID, animClass){
@@ -20,8 +19,8 @@
 
     function yScrollHandler(){
         if(index < animations.length){
-            if(window.pageYOffset+(window.innerHeight-lastWinHeight) > animations[index].trigger){
-                //alert(window.innerHeight+" "+lastWinHeight);
+            if(window.pageYOffset > animations[index].trigger){
+                //alert(window.innerHeight+" "+lastWinHeight+" "+document.body.height);
                 //alert((window.pageYOffset+(window.innerHeight-lastWinHeight))+" "+window.innerHeight+" "+document.body.offsetHeight+" "+animations[index].trigger);
                 $(animations[index].animTarget).addClass(animations[index].animation);
                 ++index;
@@ -34,4 +33,7 @@
 
     window.onscroll = yScrollHandler;
     checkAnimation();
+    $('#dropdown-button').click(function(){
+        $('#header-menu').slideToggle();
+    });
 } )( jQuery );

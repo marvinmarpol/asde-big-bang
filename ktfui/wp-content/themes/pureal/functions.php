@@ -335,10 +335,17 @@
 	function pureal_update_custom_css(){
 ?>
 	<style type="text/css">
+		#header-navigation-container{
+			background-color: <?php echo get_theme_mod('header_bg_color', '#4c1b1b'); ?>;
+		}
 		#header-navigation{
 			padding: <?php echo '0 '.(get_theme_mod('header_pad_left_right', 10)*0.25).'%'; ?>;
 			background-color: <?php echo get_theme_mod('header_bg_color', '#4c1b1b'); ?>;
 			color: <?php echo get_theme_mod('header_text_color', '#fff'); ?>;
+		}
+
+		#header-navigation-shadow{
+			padding: <?php echo '0 '.(get_theme_mod('header_pad_left_right', 10)*0.25).'%'; ?>;
 		}
 
 		#header-navigation a{
@@ -351,11 +358,11 @@
 			filter: alpha(opacity=<?php echo get_theme_mod('header_link_hover_opacity', 70); ?>);
 		}
 
-		#logo-image{
+		#logo-image, #logo-image-shadow{
 			height: <?php echo (get_theme_mod('header_logo_height', 50)+50).'px'; ?>;
 		}
 
-		#header-menu{
+		#header-menu, #header-menu-shadow{
 			padding-top: <?php echo get_theme_mod('header_pad_top_bottom', 25);?>;
 		}
 
@@ -385,31 +392,46 @@
 
 		@media (max-width: 768px) {
 			/* General */
-			.col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1{
+			.row-container{
+				padding: 1% 5%;
+			}
+
+			.row, .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1{
 				display: block;
-				width: 100%;
+				width: initial;
 			}
 
 			#header-navigation,
+			#header-navigation-shadow,
 			#footer-navigation {
 				padding: 0 1%;
 				text-align: center;
 			}
 
-			#logo{
+			/* Header */
+			#logo, #logo-shadow{
 				display: block;
 				width: initial;
 				text-align: center;
 			}
 
-			#header-menu{
+			#header-menu, #header-menu-shadow{
 				display: none;
 				width: initial;
 			}
 
-			#header-menu ul li{
+			#header-menu ul li, #header-menu-shadow ul li{
 				display: block;
 				border-top: 1px solid #ccc;
+			}
+
+			#header-menu ul li a{
+				display: block;
+			}
+
+			#header-menu ul li a:hover{
+				background-color: #f0b900;
+				color: #fff;
 			}
 
 			#header-menu ul li:first-child{
@@ -420,8 +442,13 @@
 				content: none;
 			}
 
+			#dropdown-button, #dropdown-button-shadow{
+				display: inline-block;
+			}
+
 			#profile img{
-				max-width: 100%;	
+				max-width: 100%;
+				margin-bottom: 40px;
 			}
 		}
 	</style>
