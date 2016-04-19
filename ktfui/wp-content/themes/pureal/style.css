@@ -369,6 +369,14 @@ a {
 	filter: alpha(opacity=100);
 }
 
+/* General Image Gallery */
+.gallery img{
+	max-width: 95%;
+	height: auto;
+	margin: 0 20px;
+	border: none !important;
+}
+
 /*Header navigation menu*/
 #header-navigation-container{
 	position: fixed;
