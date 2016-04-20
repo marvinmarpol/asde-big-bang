@@ -29,7 +29,13 @@ We combine user documentation and user reports on the same document. The documen
 
 ## Technical Documentation
 
-[How to develop, build, and use it.]
+For technical documentation, we have 2 documentation which are:
+
+1. Technical Documentation ---Not uploaded yet [this documentation contains all information about method and phases that we did]
+
+2. Master Testing Plan (https://github.com/gunadarma-academy/asde-big-bang/blob/master/MTP/MasterTestPlan-KTFUI.pdf)
+ 
+
 
 ### Materials
 
