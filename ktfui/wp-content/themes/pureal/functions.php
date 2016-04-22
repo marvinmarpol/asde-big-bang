@@ -417,6 +417,11 @@
 				width: 100% !important;
 			}
 
+			/* General Post */
+			.post-container{
+				margin: 20px 0;
+			}
+
 			/* Header */
 			#logo, #logo-shadow{
 				display: block;

@@ -208,7 +208,7 @@ a {
 	padding: 1% 15%;
 }
 
-.row{
+.row-table{
 	display: table;
 	width: 100%;
 }
@@ -255,7 +255,7 @@ a {
 }
 
 .col-img{
-	max-width: 90%;
+	max-width: 95%;
 	height: auto;
 }
 
@@ -353,7 +353,6 @@ a {
 .gallery img{
 	max-width: 95%;
 	height: auto;
-	margin: 0 20px;
 	border: none !important;
 }
 
@@ -365,10 +364,10 @@ a {
 .post-container{
 	display: inline-block;
 	width: 400px;
-	max-width: 100%;
+	max-width: 95%;
 	height: auto;
 	padding-bottom: 30px;
-	margin: 0 30px;
+	margin: 20px;
 	background-color: #fff;
 	-webkit-box-shadow: 0px 0px 5px 0px rgba(102,102,102,1);
 	-moz-box-shadow: 0px 0px 5px 0px rgba(102,102,102,1);
@@ -389,7 +388,7 @@ a {
 
 .post-container p{
 	text-align: left;
-	padding: 0 20px 20px 20px;
+	padding: 20px;
 	color: #222;
 }
 
