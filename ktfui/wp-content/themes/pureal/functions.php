@@ -96,9 +96,14 @@
 
 	/* Customize excerpt word length */
 	function pureal_set_excerpt_length(){
-		return 30;
+		return 50;
 	}
 	add_filter('excerpt_length', 'pureal_set_excerpt_length');
+
+	function pureal_new_excerpt_more( $more ) {
+		return '';
+	}
+	add_filter('excerpt_more', 'pureal_new_excerpt_more');
 
 
 	/* theme customization */
