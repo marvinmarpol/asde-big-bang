@@ -124,12 +124,63 @@ a {
 	text-align: center;
 }
 
+#main-content h1{
+	margin: 0;
+	padding: 30px 0 50px 0;
+}
+
 #main-content iframe{
 	max-width: 90%;
 	border: 5px solid #ededed;
 	-webkit-box-shadow: 0px 0px 5px 0px rgba(102,102,102,1);
 	-moz-box-shadow: 0px 0px 5px 0px rgba(102,102,102,1);
 	box-shadow: 0px 0px 5px 0px rgba(102,102,102,1);
+}
+
+#contact-form{
+	text-align: center;
+	vertical-align: middle;
+}
+
+#contact-form p{
+	margin: 20px 0;
+	text-align: left;
+	color: #fff;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+#contact-form textarea, #contact-form input{
+	width: 90%;
+	padding: 10px;
+	margin: 0;
+	border: none;
+	resize: none;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#contact-form textarea{
+	height: 190px;
+}
+
+#contact-form .wpcf7-submit{
+	background-color: #837673;
+	color: #fff;
+	font-family: din-regular, sans-serif;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+#contact-form .wpcf7-submit:hover{
+	background-color: #615451;
+}
+
+div .wpcf7-response-output{
+	border: none;
+	background-color: rgba(3, 3, 3, 0.6);
+	color: #fff;
 }
 
 .vertical-middle{
@@ -146,6 +197,14 @@ a {
 
 .vertical-sub{
 	vertical-align: sub;
+}
+
+.align-left{
+	text-align: left;
+}
+
+.align-right{
+	text-align: right;
 }
 
 .margin-5{
@@ -236,7 +295,7 @@ a {
   width: 57.83333333%;
 }
 .col-6 {
-  width: 50%;
+  width: 49.5%;
 }
 .col-5 {
   width: 41.16666667%;
@@ -351,7 +410,7 @@ a {
 
 /* General Image Gallery */
 .gallery img{
-	max-width: 95%;
+	max-width: 100%;
 	height: auto;
 	border: none !important;
 }
@@ -359,6 +418,10 @@ a {
 /* General Post */
 #post-content{
 	background-color: #f1f1f1;
+	background-image: url("http://localhost/ktfui/wp-content/uploads/2016/04/ormament.jpg");
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
 }
 
 .post-container{

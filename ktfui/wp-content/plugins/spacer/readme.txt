@@ -3,8 +3,8 @@ Contributors: clevelandwebdeveloper
 Donate link: http://www.clevelandwebdeveloper.com/wordpress-plugins/donate.php
 Tags: spacer, spacing, line space
 Requires at least: 3.5
-Tested up to: 4.4
-Stable tag: 3.0.1
+Tested up to: 4.5
+Stable tag: 3.0.2
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -85,6 +85,10 @@ Try adding <code>margin-bottom: 25px;</code> to the Spacer's Style setting.
 
 == Changelog ==
 
+= 3.0.2 =
+* Adds compatibility with Line-On-Sides Headers add-on
+* WP tested up to version 4.5
+
 = 3.0.1 =
 * Fixed Spacer button bug, which prevented some users from seeing the dropdown list via the Spacer button
 * Added compatibility with Beaver Page Builder's wysiswyg UI
@@ -120,5 +124,5 @@ Try adding <code>margin-bottom: 25px;</code> to the Spacer's Style setting.
 
 == Upgrade Notice ==
 
-= 3.0.1 =
-New: This update fixes the bug which prevented some users from seeing the dropdown list via the Spacer button. Also adds compatibility with Beaver Page Builder's wysiswyg UI and fixes lack of a trash icon in WP version 3.8. Finally, it adds a a live preview tool for Visual Artist. Enjoy!
+= 3.0.2 =
+New: This version adds compatibility with the new Line-On-Sides Headers add-on. Spacer is now tested up to WP version 4.5 - Enjoy!
