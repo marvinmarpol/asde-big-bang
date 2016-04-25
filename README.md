@@ -15,7 +15,7 @@ The organisation have sufficient knowledge to manage a website but want help in 
 | Dion Edo Fananie | dionfananie@gmail.com | [@dionfananie](https://github.com/dionfananie)
 | Marvin Mitchell | marvinmarpol@gmail.com | [@marvinmarpol](https://github.com/marvinmarpol)
 
-Roles and Task Distribution per member --> [Check in here] (https://github.com/gunadarma-academy/asde-big-bang/blob/master/Roles-Task-Distribution.md)
+####Roles and Task Distribution per member --> [Check in here] (https://github.com/gunadarma-academy/asde-big-bang/blob/master/Roles-Task-Distribution.md)
 --------------------------------------------------
 
 ## User Documentation
