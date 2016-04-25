@@ -15,6 +15,7 @@ The organisation have sufficient knowledge to manage a website but want help in 
 | Dion Edo Fananie | dionfananie@gmail.com | [@dionfananie](https://github.com/dionfananie)
 | Marvin Mitchell | marvinmarpol@gmail.com | [@marvinmarpol](https://github.com/marvinmarpol)
 
+Roles and Task Distribution per member --> [Check in here] (https://github.com/gunadarma-academy/asde-big-bang/blob/master/Roles-Task-Distribution.md)
 --------------------------------------------------
 
 ## User Documentation
@@ -29,11 +30,15 @@ We combine user documentation and user reports on the same document. The documen
 
 3. User Manual ---Not uploaded yet
 
+4. [Mock-Up and Design] (https://github.com/gunadarma-academy/asde-big-bang/tree/master/Images) 
+
+
 ## Technical Documentation
 
-For technical documentation, we have 2 documentation which are:
+For technical documentation, we have 3 documentation which are:
 
-1. Technical Documentation ---Not uploaded yet [this documentation contains all information about method and phases that we did]
+1. Technical Documentation [this documentation contains all information about method and tools that we used]
+  + Indonesian Version (https://github.com/gunadarma-academy/asde-big-bang/blob/master/Tech-Documentation.md)
 
 2. Master Testing Plan [this documentation contains outline and description of testing plan]
   + PDF version (https://github.com/gunadarma-academy/asde-big-bang/blob/master/MTP/MasterTestPlan-KTFUI.pdf)
