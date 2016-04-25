@@ -27,25 +27,21 @@ We combine user documentation and user reports on the same document. The documen
 2. [Pricing] (https://github.com/gunadarma-academy/asde-big-bang/blob/master/User-Report/2nd%20User%20Report---Pricing.pdf)
 [This document contain list of features and jobs-to-do on the website with each price]
 
+3. User Manual ---Not uploaded yet
+
 ## Technical Documentation
 
 For technical documentation, we have 2 documentation which are:
 
 1. Technical Documentation ---Not uploaded yet [this documentation contains all information about method and phases that we did]
 
-2. Master Testing Plan (https://github.com/gunadarma-academy/asde-big-bang/blob/master/MTP/MasterTestPlan-KTFUI.pdf)
- 
+2. Master Testing Plan [this documentation contains outline and description of testing plan]
+  + PDF version (https://github.com/gunadarma-academy/asde-big-bang/blob/master/MTP/MasterTestPlan-KTFUI.pdf)
+  + Docs version (https://github.com/gunadarma-academy/asde-big-bang/blob/master/MTP/MasterTestPlan-KTFUI.docx)
 
+3. Test Case Scenario and Results ---Not uploaded yet [this documentation contains scenario per test case and results, based on Master Testing Plan]
 
-### Materials
-
-+ Introduction
-+ Project Management
-+ Software Design
-+ Design Analysis
-+ Evaluation
-+ Software Quality
-+ Project Presentation
+--------------------------------------------------
 
 ### Development Process
 
