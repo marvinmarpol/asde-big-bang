@@ -42,15 +42,18 @@ For technical documentation, we have 3 documentation which are:
 1. Technical Documentation [this documentation contains all information about method and tools that we used]
   + Indonesian Version (https://github.com/gunadarma-academy/asde-big-bang/blob/master/Tech-Documentation.md)
 
-2. Master Testing Plan [this documentation contains outline and description of testing plan]
+2. Time Table Management and Burndown Chart
+  + PDF (https://github.com/gunadarma-academy/asde-big-bang/blob/master/Board_Time-Table.pdf)
+
+3. Master Testing Plan [this documentation contains outline and description of testing plan]
   + PDF version (https://github.com/gunadarma-academy/asde-big-bang/blob/master/MTP/MasterTestPlan-KTFUI.pdf)
   + Docs version (https://github.com/gunadarma-academy/asde-big-bang/blob/master/MTP/MasterTestPlan-KTFUI.docx)
 
-3. Test Case Scenario and Results [this documentation contains scenario per test case and results, based on Master Testing Plan]
+4. Test Case Scenario and Results [this documentation contains scenario per test case and results, based on Master Testing Plan]
   + PDF version (https://github.com/gunadarma-academy/asde-big-bang/blob/master/MTP/Scenario_and_Result-KTFUI.pdf)
   + Docs version (https://github.com/gunadarma-academy/asde-big-bang/blob/master/MTP/Scenario_and_Result-KTFUI.docx)
   
-4. Slide for ASDE Exam ---not uploaded yet[this slide contain explanation about project from the start until testing and finished, will be presented for exam on Thursday, 28 April 2016]
+5. Slide for ASDE Exam ---not uploaded yet[this slide contain explanation about project from the start until testing and finished, will be presented for exam on Thursday, 28 April 2016]
 
 --------------------------------------------------
 
