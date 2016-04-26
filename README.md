@@ -1,5 +1,7 @@
 # KTF UI's Website
 
+![KTF UI] (https://github.com/gunadarma-academy/asde-big-bang/blob/master/Images/Asset-logo_ktfui.jpg)
+
 Komunitas Tari Fisip Universitas Indonesia (KTF UI) wishes to have a professional website that look like a company profile. They want to shows the documentation on their show such as text, photos and videos linked to youtube. 
 
 The site will have approximately 10 pages which are Home, What we offer (Traditional, Modern, Music), Achievements, Gallery, Project, Contact and About. The organisation already has their own design and want to have a responsive website template. The organisation will be responsible for creating all text and image content. 
@@ -30,7 +32,7 @@ We combine user documentation and user reports on the same document. The documen
 
 3. User Manual ---Not uploaded yet
 
-4. [Mock-Up and Design] (https://github.com/gunadarma-academy/asde-big-bang/tree/master/Images) 
+4. [Mock-Up and Design] (https://github.com/gunadarma-academy/asde-big-bang/tree/master/Images) [this folder contains all assets and design used for KTF UI Website, image on .png and .jpg]
 
 
 ## Technical Documentation
@@ -44,7 +46,11 @@ For technical documentation, we have 3 documentation which are:
   + PDF version (https://github.com/gunadarma-academy/asde-big-bang/blob/master/MTP/MasterTestPlan-KTFUI.pdf)
   + Docs version (https://github.com/gunadarma-academy/asde-big-bang/blob/master/MTP/MasterTestPlan-KTFUI.docx)
 
-3. Test Case Scenario and Results ---Not uploaded yet [this documentation contains scenario per test case and results, based on Master Testing Plan]
+3. Test Case Scenario and Results [this documentation contains scenario per test case and results, based on Master Testing Plan]
+  + PDF version (https://github.com/gunadarma-academy/asde-big-bang/blob/master/MTP/Scenario_and_Result-KTFUI.pdf)
+  + Docs version (https://github.com/gunadarma-academy/asde-big-bang/blob/master/MTP/Scenario_and_Result-KTFUI.docx)
+  
+4. Slide for ASDE Exam ---not uploaded yet[this slide contain explanation about project from the start until testing and finished, will be presented for exam on Thursday, 28 April 2016]
 
 --------------------------------------------------
 
