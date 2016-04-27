@@ -30,7 +30,7 @@ We combine user documentation and user reports on the same document. The documen
 2. [Pricing] (https://github.com/gunadarma-academy/asde-big-bang/blob/master/User-Report/2nd%20User%20Report---Pricing.pdf)
 [This document contain list of features and jobs-to-do on the website with each price]
 
-3. User Manual ---Not uploaded yet
+3. [User Manual] (https://github.com/gunadarma-academy/asde-big-bang/blob/master/User%20Manual.pdf) [This document contain manual instruction for visitor and admin to using the website]
 
 4. [Mock-Up and Design] (https://github.com/gunadarma-academy/asde-big-bang/tree/master/Images) [this folder contains all assets and design used for KTF UI Website, image on .png and .jpg]
 
@@ -53,7 +53,8 @@ For technical documentation, we have 5 documentation which are:
   + PDF version (https://github.com/gunadarma-academy/asde-big-bang/blob/master/MTP/Scenario_and_Result-KTFUI.pdf)
   + Docs version (https://github.com/gunadarma-academy/asde-big-bang/blob/master/MTP/Scenario_and_Result-KTFUI.docx)
   
-5. Slide for ASDE Exam ---not uploaded yet[this slide contain explanation about project from the start until testing and finished, will be presented for exam on Thursday, 28 April 2016]
+5. Slide for ASDE Exam [this folder contain 16 image which explanate about project from the start until testing and finished, will be presented for exam on Thursday, 28 April 2016]
+  + Slide in .jpg (https://github.com/gunadarma-academy/asde-big-bang/tree/master/Slide)
 
 --------------------------------------------------
 
