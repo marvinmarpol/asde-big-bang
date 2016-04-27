@@ -42,7 +42,7 @@ Dalam hal ini, team BigBang membuat template Wordpress sendiri (tidak menggunaka
 ## Tools yang digunakan
 
 + Developing Web : Wordpress CMS, Github, Xampp Control Panel
-+ Testing Web : Wordpress CMS, Jmeter, Google Docs
++ Testing Web : Wordpress CMS, Jmeter, Google Docs, Google Dev tools (Model Device)
 + Operating System : Microsoft Windows
 + Design : Inkscape, Adobe Photoshop
 + Team Communication :  Whatsapp, Gitter, Google Docs, Google Slide, Email
