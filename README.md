@@ -1,5 +1,7 @@
 # KTF UI's Website
 
+![KTF UI] (https://github.com/gunadarma-academy/asde-big-bang/blob/master/Images/Asset-logo_ktfui.jpg)
+
 Komunitas Tari Fisip Universitas Indonesia (KTF UI) wishes to have a professional website that look like a company profile. They want to shows the documentation on their show such as text, photos and videos linked to youtube. 
 
 The site will have approximately 10 pages which are Home, What we offer (Traditional, Modern, Music), Achievements, Gallery, Project, Contact and About. The organisation already has their own design and want to have a responsive website template. The organisation will be responsible for creating all text and image content. 
@@ -15,47 +17,61 @@ The organisation have sufficient knowledge to manage a website but want help in 
 | Dion Edo Fananie | dionfananie@gmail.com | [@dionfananie](https://github.com/dionfananie)
 | Marvin Mitchell | marvinmarpol@gmail.com | [@marvinmarpol](https://github.com/marvinmarpol)
 
+####Roles and Task Distribution per member --> [Check in here] (https://github.com/gunadarma-academy/asde-big-bang/blob/master/Roles-Task-Distribution.md)
 --------------------------------------------------
 
 ## User Documentation
 
-### [FIND IT HERE :D] (https://github.com/gunadarma-academy/asde-big-bang/blob/master/ktfui-DOCUMENTATION)
+We combine user documentation and user reports on the same document. The document, among others:
 
-[Explanation about the project requirements, analysis, design, architecture, components, interfaces, evaluation, presentation, and other characteristics.]
+1. [Website Requirement Specification] (https://github.com/gunadarma-academy/asde-big-bang/blob/master/User-Report/1st%20User%20Report---Web-Req-Spec.pdf)
+[This document contain description and definition of website developed, use case diagram, components and features on the website and also enclosure from client interview]
 
-(who, why, how, what, where, when)
+2. [Pricing] (https://github.com/gunadarma-academy/asde-big-bang/blob/master/User-Report/2nd%20User%20Report---Pricing.pdf)
+[This document contain list of features and jobs-to-do on the website with each price]
+
+3. User Manual ---Not uploaded yet
+
+4. [Mock-Up and Design] (https://github.com/gunadarma-academy/asde-big-bang/tree/master/Images) [this folder contains all assets and design used for KTF UI Website, image on .png and .jpg]
+
 
 ## Technical Documentation
 
-[How to develop, build, and use it.]
-### [On Progress]
+For technical documentation, we have 5 documentation which are:
+
+1. Technical Documentation [this documentation contains all information about method and tools that we used]
+  + Indonesian Version (https://github.com/gunadarma-academy/asde-big-bang/blob/master/Tech-Documentation.md)
+
+2. Time Table Management and Burndown Chart
+  + PDF (https://github.com/gunadarma-academy/asde-big-bang/blob/master/Board_Time-Table.pdf)
+
+3. Master Testing Plan [this documentation contains outline and description of testing plan]
+  + PDF version (https://github.com/gunadarma-academy/asde-big-bang/blob/master/MTP/MasterTestPlan-KTFUI.pdf)
+  + Docs version (https://github.com/gunadarma-academy/asde-big-bang/blob/master/MTP/MasterTestPlan-KTFUI.docx)
+
+4. Test Case Scenario and Results [this documentation contains scenario per test case and results, based on Master Testing Plan]
+  + PDF version (https://github.com/gunadarma-academy/asde-big-bang/blob/master/MTP/Scenario_and_Result-KTFUI.pdf)
+  + Docs version (https://github.com/gunadarma-academy/asde-big-bang/blob/master/MTP/Scenario_and_Result-KTFUI.docx)
+  
+5. Slide for ASDE Exam ---not uploaded yet[this slide contain explanation about project from the start until testing and finished, will be presented for exam on Thursday, 28 April 2016]
+
+--------------------------------------------------
+
+### Development Process
+
++ Ideation
+  + Choose an idea then present it. [The idea was to developed a website for KTF UI]
+  + The idea is a usable software application. [Yes it is, based on Website Requirement Specification]
+  + Implement the idea using any kind of methods. [We are using RAD methods]
++ Build
+  + Document the software design and engineering theory sufficiently. [Making of documentations, reports, and master test plan]
+  + Build the software using any kind of libraries or frameworks. [Developes website using CMS Wordpress]
++ Presentation
+  + Present the result to the class.
+  + The winner will be chosen.
 
 --------------------------------------------------
 
 ## General Notes
 
 For the most updated notes, see <https://github.com/gunadarma-academy/ASDE>. This README is a template from <https://github.com/gunadarma-academy/asde-project>.
-
-### Materials
-
-+ Introduction
-+ Project Management
-+ Software Design
-+ Design Analysis
-+ Evaluation
-+ Software Quality
-+ Project Presentation
-
-### Development Process
-
-+ Ideation
-  + Choose an idea then present it.
-  + Constantly improve or iterate on the idea.
-  + The idea is a usable software application.
-  + Implement the idea using any kind of methods.
-+ Build
-  + Document the software design and engineering theory sufficiently.
-  + Build the software using any kind of libraries or frameworks.
-+ Presentation
-  + Present the result to the class.
-  + The winner will be chosen.
