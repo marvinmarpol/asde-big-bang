@@ -30,7 +30,7 @@ Menurut Kendall (2010), terdapat tiga fase dalam RAD yang melibatkan penganalisi
 2.	Tidak diperlukan jumlah personil yang relatif banyak
 3.	Anggaran yang dibutuhkan dalam membuat aplikasi dapat disederhanakan, mengingat sedikitnya tahapan dalam metode ini
 4.	Metode ini sangat cocok dalam pengembangan aplikasi yang berfokus pada tenggat waktu penyelesaian yang cepat
-5.	Perubahan pada desain aplikasi dapat berjalan dengan cepat
+5.	flexibilitas yang tinggi dalam Perubahan pada desain aplikasi sehingga dapat berjalan dengan cepat
 6.	Hubungan antara developer dan client dapat lebih kuat karena client dilibatkan langsung dalam pengembangan aplikasi
 
 ## Teknologi yang digunakan : Wordpress CMS (Content Management System)
