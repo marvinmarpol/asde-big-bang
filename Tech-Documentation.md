@@ -47,4 +47,4 @@ Dalam hal ini, team BigBang membuat template Wordpress sendiri (tidak menggunaka
 + Design : Inkscape, Adobe Photoshop
 + Team Communication :  Whatsapp, Gitter, Google Docs, Google Slide, Email
 + Client Communication : Whatsapp, Email
-+ Documentation : Github, Google Docs, Google Slide, Google Sheet, Draw.io Diagram, Ms. Word
++ Documentation : Github, Google Docs, Google Slide, Google Sheet, Draw.io Diagram, Ms. Word, Zenhub
