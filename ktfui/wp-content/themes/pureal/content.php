@@ -6,7 +6,7 @@
 		}
 		the_content();
 	}else{
-		echo get_the_post_thumbnail();
+		echo get_the_post_thumbnail(null, 'medium-thumbnail');
 		echo '<h1>'.get_the_title().'</h1>';
 		echo '<h3>'.get_the_time('F j, Y g:i a').'</h3>';
 		echo wpautop(preg_replace('/<(.+?)[\s]*\/?[\s]*>/si','', get_the_excerpt(null, '')));

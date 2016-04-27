@@ -33,7 +33,8 @@
 
 		/* add feature image support */
 		add_theme_support('post-thumbnails');
-		//add_image_size('small-thumbnail', 180, 120, true); //hardcrop=true
+		add_image_size('small-thumbnail', 180, 120, false); //hardcrop=true
+		add_image_size('medium-thumbnail', 450, 450, false); //hardcrop=true
 		//add_image_size('fullwidth-banner', 920, 210, array('left', 'top'));
 
 		/* add post format support */
