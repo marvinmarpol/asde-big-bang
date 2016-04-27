@@ -37,7 +37,7 @@ We combine user documentation and user reports on the same document. The documen
 
 ## Technical Documentation
 
-For technical documentation, we have 3 documentation which are:
+For technical documentation, we have 5 documentation which are:
 
 1. Technical Documentation [this documentation contains all information about method and tools that we used]
   + Indonesian Version (https://github.com/gunadarma-academy/asde-big-bang/blob/master/Tech-Documentation.md)
