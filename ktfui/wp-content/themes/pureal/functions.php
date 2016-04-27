@@ -412,6 +412,10 @@
 				text-align: center;
 			}
 
+			#main-content .imageholder h1{
+				font-size: 1.5em;
+			}
+
 			/* General Gallery */
 			.gallery-item{
 				width: 100% !important;

@@ -251,6 +251,10 @@ div .wpcf7-response-output{
 	margin-bottom: 100px;
 }
 
+.row-container-0-10{
+	padding: 0 10%;
+}
+
 .row-container{
 	padding: 1% 10%;
 }
@@ -316,6 +320,34 @@ div .wpcf7-response-output{
 .col-img{
 	max-width: 95%;
 	height: auto;
+}
+
+.full-img{
+	width: 100%;
+	height: auto;
+}
+
+.imageholder{
+	position: relative;
+	margin-bottom: 3px;
+}
+
+#main-content .imageholder h1{
+	margin: 0;
+	padding: 10px;
+	color: #fff;
+	font-family: din-regular, helvetica, sans-serif;
+}
+
+.highlight-bottom-right{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	text-align: right;
+	background: url("images/gradient.png");
+	background-repeat: repeat-x;
+	background-size: contain;
 }
 
 .flexslider .flex-control-nav{
@@ -418,10 +450,6 @@ div .wpcf7-response-output{
 /* General Post */
 #post-content{
 	background-color: #f1f1f1;
-	background-image: url("http://localhost/ktfui/wp-content/uploads/2016/04/ormament.jpg");
-    background-size: cover;
-    background-position: 50%;
-    background-repeat: no-repeat;
 }
 
 .post-container{
