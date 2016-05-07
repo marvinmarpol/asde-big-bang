@@ -6,7 +6,7 @@
 		/*echo get_template_directory_uri ();
 		echo (get_theme_mod('header_pad_top_bottom', '10')*0.5).'px';*/
 	}
-	add_action('wp_enqueue_scripts', 	'pureal_init_style');
+	add_action('wp_enqueue_scripts', 'pureal_init_style');
 
 
 	/* init script */
@@ -485,3 +485,29 @@
 		wp_enqueue_script( 'custom_css_preview', get_template_directory_uri().'/js/customizepreview.js', array( 'jquery','customize-preview' ) );
 	}
 	add_action( 'customize_preview_init', 'pureal_preview_js' );
+
+
+	/* Enable scroll pagination */
+	function pureal_load_more(){
+		//load more post
+		$counter=0;
+		$page = $_POST['page']+1;
+		$query = new WP_Query(array(
+			'post_type' => 'post',
+			'post_status' => 'publish',
+			'paged' => $page
+		) );
+		while($query->have_posts()) : $query->the_post(); ++$counter;?>
+			<div class="post-container">
+				<?php get_template_part('content', get_post_format()); ?>
+			</div>
+		<?php endwhile;
+		wp_reset_postdata();
+		if(!$counter){
+			echo -1; //-1 means there is no more posts
+		}
+		die(); //important, must be always in ajax connection
+	}
+	add_action('wp_ajax_nopriv_pureal_load_more', 'pureal_load_more');
+	add_action('wp_ajax_pureal_load_more', 'pureal_load_more');
+?>

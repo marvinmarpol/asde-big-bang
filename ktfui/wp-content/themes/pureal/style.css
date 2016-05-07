@@ -456,6 +456,16 @@ div .wpcf7-response-output{
 	padding: 30px 0 0 0;
 }
 
+#loadmore{
+	padding: 10px 0;
+}
+
+#loadmore img{
+	width: 50px;
+	height: auto;
+	visibility: hidden;
+}
+
 .post-container{
 	display: inline-block;
 	width: 400px;

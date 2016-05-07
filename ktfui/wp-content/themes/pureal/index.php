@@ -9,6 +9,7 @@
 							</div>
 					<?php endwhile; ?>
 			</div>
-		<div id="main-content">
+			<div id="loadmore" data-url="<?php echo admin_url('admin-ajax.php')?>" data-page="1"><img src="<?php echo get_template_directory_uri().'/images/load.gif'; ?>" /></div>
+		</div>
 	</div>
 <?php get_footer(); ?>
